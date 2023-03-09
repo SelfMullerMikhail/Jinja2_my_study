@@ -1,0 +1,5 @@
+{% import 'dialog.htm' as dlg %}
+{% include "header.htm" ignore missing%}
+<p> Content of page
+{{dlg.dialog_1("Attention", 'This is text dialog!')}}
+{% include "footer.htm" %}

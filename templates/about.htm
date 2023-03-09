@@ -1,0 +1,11 @@
+{% extends "layout/default.tpl" -%}
+
+{% block title %}About site {% endblock -%}
+
+{% block content -%}
+{% block table_contents %}{{ super() }}{% endblock %}
+<h1> About This Site</h1>
+<p> {{self.title()}} </p>
+{% endblock -%}
+
+{% block item %}<p class="item">{{super()}}</p>{% endblock %} 
